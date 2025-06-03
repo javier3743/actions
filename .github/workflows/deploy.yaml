@@ -10,3 +10,8 @@ jobs:
         steps:
             - name: 'Print'
               run: echo "bruh"
+    test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: 'Print'
+              run: echo "bruh 2"
