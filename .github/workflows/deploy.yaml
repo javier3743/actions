@@ -8,8 +8,12 @@ jobs:
     deploy:
         runs-on: ubuntu-latest
         steps:
-            - name: 'Print'
+            - name: '0'
+              run: ls
+            - name: '1'
               run: a
+            - name: '2'
+              run: echo "no"
             - name: Send Slack notification on failure
               if: failure()
               run: echo "fialed"
